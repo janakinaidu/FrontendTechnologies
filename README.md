@@ -17,11 +17,11 @@ CSS:
 ====
 CSS Selectors:
 ==============
-#id,.class,element,attribute...
+        #id,.class,element,attribute...
 
 order of selectors(HighestPriority);
 ====================================
-!important > element > id > class > attribute(div)
+      !important > element > id > class > attribute(div)
 
 difference between padding and margin:
 ======================================
@@ -41,41 +41,41 @@ $("p:nth-child(3)").css("background-color", "yellow");
 
 jQuery Event Methods:
 =====================
-mouseevents           :click,dblclick,mouseenter,mouseleave;
-Keyboard events       :keypress,keydown,keyup;
-Form events           :submit,change,foucs,blur;
-Document/Window Events:load,resize,scroll,unload
+          mouseevents           :click,dblclick,mouseenter,mouseleave;
+          Keyboard events       :keypress,keydown,keyup;
+          Form events           :submit,change,foucs,blur;
+          Document/Window Events:load,resize,scroll,unload
 
 
 
 jQuery - The noConflict() Method
 ================================
-What if other JavaScript frameworks also use the $ sign as a shortcut?
+        What if other JavaScript frameworks also use the $ sign as a shortcut?
 
-If two different frameworks are using the same shortcut, one of them might stop working.
+        If two different frameworks are using the same shortcut, one of them might stop working.
 
-The jQuery team have already thought about this, and implemented the noConflict() method.
+        The jQuery team have already thought about this, and implemented the noConflict() method.
 
 
-var jq = $.noConflict();
-jq(document).ready(function(){
-  jq("button").click(function(){
-    jq("p").text("jQuery is still working!");
-  });
-});
+        var jq = $.noConflict();
+        jq(document).ready(function(){
+          jq("button").click(function(){
+            jq("p").text("jQuery is still working!");
+          });
+        });
 
 
 Angularjs:
 -----------
-AngularJS is a JavaScript framework.It can be added to HTML page with a <script> tag;
+        AngularJS is a JavaScript framework.It can be added to HTML page with a <script> tag;
 
-The ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application.
+        The ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application.
 
-The ng-model directive binds the value of the input field to the application variable name.
+        The ng-model directive binds the value of the input field to the application variable name.
 
-The ng-bind directive binds the content of the <p> element to the application variable name
+        The ng-bind directive binds the content of the <p> element to the application variable name
 
-You can use data-ng-, instead of ng-, if you want to make your page HTML valid.
+        You can use data-ng-, instead of ng-, if you want to make your page HTML valid.
 
 
 Two-way Binding:
